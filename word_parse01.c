@@ -9,7 +9,7 @@ int main() {
   fgets(sometext, 64, stdin);
 
   // The initial call to strtok(), with the string to search.
-  match = strtok(sometext, " ");
+  match = strtok(sometext, " ,.!?:;\"'");
 
   // Loops as long as the return value isn't NULL
   while (match) {
